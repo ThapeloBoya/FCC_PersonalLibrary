@@ -1,0 +1,133 @@
+:root {
+  --main-blue: #3498db;
+  --light-blue: #85c1e9;
+  --dark-blue: #1f618d;
+  --main-green: #2ecc71;
+  --light-green: #a9dfbf;
+  --dark-green: #27ae60;
+  --white: #f0f0f0;
+  --black: #000;
+  --gray: #636e72;
+  --dark-gray: #252b31;
+}
+
+/* Reset y estilos básicos */
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: var(--white);
+  color: var(--black);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--main-blue);
+  text-decoration: underline;
+}
+
+header {
+  background-color: var(--main-blue);
+  color: var(--white);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Formularios */
+form {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid var(--black);
+  border-radius: 4px;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+form button[type="submit"], form input[type = "submit"] {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn.btn-info.addComment {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.btn.btn-danger.deleteBook {
+  background-color: transparent;
+  color: var(--dark-blue);
+  border: 1px solid var(--dark-blue);
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+/* Estilos para las otras secciones y elementos */
+
+#display {
+  background-color: var(--white);
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  color: var(--black);
+}
+
+#bookDetail {
+  background-color: var(--white);
+  padding: 20px;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  margin-top: 20px;
+  color: var(--black);
+}
+
+#deleteAllBooks {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+#newBookForm {
+  margin-bottom: 20px;
+}
+
+/* Media queries y otros estilos adicionales */
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
